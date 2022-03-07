@@ -55,25 +55,3 @@ class Record:
         self.first = first
         self.last = last
 
-
-if __name__ == '__main__':
-    m = MongoDB(cs, db, tbl)
-    m.add({'first': 'Dvir','last':'Noiman', "id_number": m.updateID()})
-
-    for rec in m.find():
-        print(rec)
-    # m.remove({'name': 'Dvir'})
-
-    f = m.find({"id_number": {'$exists': 1}})
-    #  add here if nothing found start with 0, if not add 1 and return it in the class def above
-    for i in f:
-        first = i["first"]
-        last = i["last"]
-        id = i["id_number"]
-        print(f'Name: {first} {last} Id Number: {id}')
-
-
-    print(m.getMaxID())
-
-    m.updateID()
-    print(m.getMaxID())
