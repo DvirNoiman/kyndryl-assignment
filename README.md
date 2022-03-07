@@ -1,14 +1,10 @@
-"# kyndryl-assignment" 
+kyndryl-assignment
+------------------
 Rest-API system – Home assignment
-
 The goal of this exercise is to check basic knowledge with ORM, Rest-API and DB, and see what you consider production-level code.
-
 Pretend that you got the following request from a client:
-
 We need you to design and implement a system to manage our employees. It should have a Rest-API server that gets 3 values: first name, last name and ID number. The server stores the values in a DB. The ID needs to be numeric. The first name and last name need to contain only letters, and start with an upper-case letter.
-
 In addition, implement an app (command-line or web) for adding new records, and showing a list of the existing records.
-
 Please use flask (or Django) for your solution. Make sure to supply us with all the info required to run and test the code (virtual env in case of python, docker is optional….)
 
 
